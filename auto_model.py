@@ -9,7 +9,7 @@ class AutoModel:
         self._years = list(years) # copy
 
     @property
-    def get_name(self) -> str:
+    def name(self) -> str:
         return self._name
     
     @property

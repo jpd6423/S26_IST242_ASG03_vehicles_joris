@@ -10,11 +10,11 @@ class Manufacturer:
 
     # Properties
     @property
-    def get_name(self) -> str:
+    def name(self) -> str:
         return self._name
     
     @property
-    def get_country(self) -> str:
+    def country(self) -> str:
         return self._country
     
     # Printing out the manufacturer's objects
