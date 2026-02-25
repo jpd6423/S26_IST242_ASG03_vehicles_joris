@@ -1,5 +1,6 @@
 # This is the unit testing file.
 # Author: Joris Daub
+# Run python -m pytest test_vehicles.py -v
 
 import pytest
 
