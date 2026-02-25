@@ -1,12 +1,14 @@
 from manufacturer import Manufacturer
 from auto_model import AutoModel
+from sedan import Sedan
 
 def main():
-    original_list = [2020, 2021]
-    am = AutoModel("F150", True, original_list)
-
-    print(am)
-    pass
+    s = Sedan(
+            Manufacturer("Honda", "Japan"),
+            AutoModel("Civic", False, [1996, 1997, 1998]),
+            28.0,
+        )
+    print(s)
 
 if __name__ == "__main__":
     main()
