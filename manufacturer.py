@@ -19,4 +19,4 @@ class Manufacturer:
     
     # Printing out the manufacturer's objects
     def __str__(self) -> str:
-        return f"({self._name}, {self._country})"
+        return f"{self._name}, {self._country}"
