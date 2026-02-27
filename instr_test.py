@@ -2,7 +2,7 @@
 Instructor-provided test suite for Assignment 3 – Vehicle Hierarchy.
 
 Run with:
-    python -m pytest test_vehicles.py -v
+    python -m pytest instr_test.py -v
 Or simply:
     pytest -v
 
