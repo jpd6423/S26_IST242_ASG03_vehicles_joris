@@ -86,31 +86,31 @@ class TestAutoModel:
 #  Vehicle / abstract contract tests
 # ============================================================
 
-# class TestVehicleAbstract:
+class TestVehicleAbstract:
 
-#     def test_vehicle_cannot_be_instantiated(self):
-#         """Vehicle is abstract and should not be directly instantiable."""
-#         with pytest.raises(TypeError):
-#             Vehicle(
-#                 Manufacturer("X", "Y"),
-#                 AutoModel("Z", True, [2020]),
-#                 25.0,
-#             )
+    def test_vehicle_cannot_be_instantiated(self):
+        """Vehicle is abstract and should not be directly instantiable."""
+        with pytest.raises(TypeError):
+            Vehicle(
+                Manufacturer("X", "Y"),
+                AutoModel("Z", True, [2020]),
+                25.0,
+            )
 
-#     def test_subclass_must_implement_number_of_wheels(self):
-#         """A subclass that does NOT implement number_of_wheels should fail."""
+    def test_subclass_must_implement_number_of_wheels(self):
+        """A subclass that does NOT implement number_of_wheels should fail."""
 
-#         # This incomplete subclass should raise TypeError on instantiation
-#         with pytest.raises(TypeError):
+        # This incomplete subclass should raise TypeError on instantiation
+        with pytest.raises(TypeError):
 
-#             class Incomplete(Vehicle):
-#                 pass
+            class Incomplete(Vehicle):
+                pass
 
-#             Incomplete(
-#                 Manufacturer("X", "Y"),
-#                 AutoModel("Z", True, [2020]),
-#                 25.0,
-#             )
+            Incomplete(
+                Manufacturer("X", "Y"),
+                AutoModel("Z", True, [2020]),
+                25.0,
+            )
 
 
 # ============================================================

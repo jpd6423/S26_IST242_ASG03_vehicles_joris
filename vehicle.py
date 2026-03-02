@@ -34,5 +34,6 @@ class Vehicle(ABC):
         return self._mpg * num_of_gallons
     
     # abstract methods
+    @abstractmethod
     def number_of_wheels(self) -> int:
         pass
