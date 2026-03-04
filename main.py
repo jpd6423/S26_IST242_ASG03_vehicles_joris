@@ -8,7 +8,7 @@ def main():
             AutoModel("Civic", False, [1996, 1997, 1998]),
             28.0,
         )
-    print(s)
+    print(s.how_far_with(10))
 
 if __name__ == "__main__":
     main()
